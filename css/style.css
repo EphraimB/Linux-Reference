@@ -2,5 +2,20 @@ h1{text-align: center;}
 h2{text-align: center;}
 
 .directory{position: absolute; width: 200px; height: 150px; line-height: 150px; background-color: orange; text-align: center; vertical-align: middle; color: white;;}
+.directory:hover{border: 2px solid yellow;}
 #bin{left: 200px; top: 200px;}
 #boot{left: 500px; top: 200px;}
+#dev{left: 800px; top: 200px;}
+#etc{left: 1100px; top: 200px;}
+#home{left: 1400px; top: 200px;}
+#media{left: 200px; top: 500px;}
+#lib{left: 500px; top: 500px;}
+#mnt{left: 800px; top: 500px;}
+#misc{left: 1100px; top: 500px;}
+#opt{left: 1400px; top: 500px;}
+#proc{left: 200px; top: 800px;}
+#root{left: 500px; top: 800px;}
+#sbin{left: 800px; top: 800px;}
+#tmp{left: 1100px; top: 800px;}
+#usr{left: 1400px; top: 800px;}
+#var{left: 800px; top: 1100px;}
