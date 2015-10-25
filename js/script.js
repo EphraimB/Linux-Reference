@@ -57,6 +57,44 @@ media.style.display = "none";
 srv.style.display = "none";
 };
 
+function openDirectory()
+{
+bin.style.display = "none";
+sbin.style.display = "none";
+etc.style.display = "none";
+dev.style.display = "none";
+proc.style.display = "none";
+Var.style.display = "none";
+tmp.style.display = "none";
+usr.style.display = "none";
+home.style.display = "none";
+boot.style.display = "none";
+lib.style.display = "none";
+opt.style.display = "none";
+mnt.style.display = "none";
+media.style.display = "none";
+srv.style.display = "none";
+};
+
+function closeDirectory()
+{
+bin.style.display = "block";
+sbin.style.display = "block";
+etc.style.display = "block";
+dev.style.display = "block";
+proc.style.display = "block";
+Var.style.display = "block";
+tmp.style.display = "block";
+usr.style.display = "block";
+home.style.display = "block";
+boot.style.display = "block";
+lib.style.display = "block";
+opt.style.display = "block";
+mnt.style.display = "block";
+media.style.display = "block";
+srv.style.display = "block";
+};
+
 parent.onclick = function toggle()
 {
 openParentDirectory();
@@ -71,9 +109,29 @@ toggle();
 };
 
 };
+bin.onclick = function binToggle()
+{
+openDirectory();
+
+bin.style.display = "block";
+bin.style.left = "900px";
+bin.style.top = "400px";
+bin.style.backgroundColor = "red";
+
 bin.onclick = function()
 {
-alert("Testing");
+closeDirectory();
+
+bin.style.backgroundColor = "orange";
+bin.style.left = "50px";
+bin.style.top = "500px";
+
+bin.onclick = function()
+{
+binToggle();
+};
+};
+
 };
 
 };
