@@ -20,6 +20,7 @@ var sbinDescription = document.getElementById("sbinDescription");
 var etcDescription = document.getElementById("etcDescription");
 var devDescription = document.getElementById("devDescription");
 var procDescription = document.getElementById("procDescription");
+var varDescription = document.getElementById("varDescription");
 
 function openParentDirectory()
 {
@@ -86,6 +87,11 @@ proc.style.backgroundColor = "orange";
 proc.style.left = "1250px";
 proc.style.top = "500px";
 procDescription.style.display = "none";
+
+Var.style.backgroundColor = "orange";
+Var.style.left = "1550px";
+Var.style.top = "500px";
+varDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -274,6 +280,34 @@ procDescription.style.display = "none";
 proc.onclick = function()
 {
 procToggle();
+};
+
+};
+
+};
+
+Var.onclick = function varToggle()
+{
+openDirectory();
+
+Var.style.display = "block";
+Var.style.left = "900px";
+Var.style.top = "400px";
+Var.style.backgroundColor = "red";
+varDescription.style.display = "inline";
+
+Var.onclick = function()
+{
+closeDirectory();
+
+Var.style.backgroundColor = "orange";
+Var.style.left = "1550px";
+Var.style.top = "500px";
+varDescription.style.display = "none";
+
+Var.onclick = function()
+{
+varToggle();
 };
 
 };
