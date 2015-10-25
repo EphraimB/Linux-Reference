@@ -15,6 +15,8 @@ var mnt = document.getElementById("mnt");
 var media = document.getElementById("media");
 var srv = document.getElementById("srv");
 
+var binDescription = document.getElementById("binDescription");
+
 function openParentDirectory()
 {
 parent.style.backgroundColor = "red";
@@ -59,7 +61,7 @@ srv.style.display = "none";
 bin.style.backgroundColor = "orange";
 bin.style.left = "50px";
 bin.style.top = "500px";
-document.getElementById("binDescription").style.display = "none";
+binDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -122,13 +124,7 @@ bin.style.display = "block";
 bin.style.left = "900px";
 bin.style.top = "400px";
 bin.style.backgroundColor = "red";
-
-var binDescriptionHolder = document.createElement("p");
-
-var binDescription = document.createTextNode("User Binaries go in this Directory");
-binDescriptionHolder.appendChild(binDescription);
-document.body.appendChild(binDescriptionHolder);
-binDescriptionHolder.setAttribute("id", "binDescription");
+binDescription.style.display = "inline";
 
 bin.onclick = function()
 {
@@ -137,7 +133,7 @@ closeDirectory();
 bin.style.backgroundColor = "orange";
 bin.style.left = "50px";
 bin.style.top = "500px";
-binDescriptionHolder.style.display = "none";
+binDescription.style.display = "none";
 
 bin.onclick = function()
 {
