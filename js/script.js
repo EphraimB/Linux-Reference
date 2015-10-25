@@ -18,6 +18,7 @@ var srv = document.getElementById("srv");
 var binDescription = document.getElementById("binDescription");
 var sbinDescription = document.getElementById("sbinDescription");
 var etcDescription = document.getElementById("etcDescription");
+var devDescription = document.getElementById("devDescription");
 
 function openParentDirectory()
 {
@@ -74,6 +75,11 @@ etc.style.backgroundColor = "orange";
 etc.style.left = "650px";
 etc.style.top = "500px";
 etcDescription.style.display = "none";
+
+dev.style.backgroundColor = "orange";
+dev.style.left = "950px";
+dev.style.top = "500px";
+devDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -206,6 +212,34 @@ etcDescription.style.display = "none";
 etc.onclick = function()
 {
 etcToggle();
+};
+
+};
+
+};
+
+dev.onclick = function devToggle()
+{
+openDirectory();
+
+dev.style.display = "block";
+dev.style.left = "900px";
+dev.style.top = "400px";
+dev.style.backgroundColor = "red";
+devDescription.style.display = "inline";
+
+dev.onclick = function()
+{
+closeDirectory();
+
+dev.style.backgroundColor = "orange";
+dev.style.left = "950px";
+dev.style.top = "500px";
+devDescription.style.display = "none";
+
+dev.onclick = function()
+{
+devToggle();
 };
 
 };
