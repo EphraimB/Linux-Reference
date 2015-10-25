@@ -19,6 +19,7 @@ var binDescription = document.getElementById("binDescription");
 var sbinDescription = document.getElementById("sbinDescription");
 var etcDescription = document.getElementById("etcDescription");
 var devDescription = document.getElementById("devDescription");
+var procDescription = document.getElementById("procDescription");
 
 function openParentDirectory()
 {
@@ -80,6 +81,11 @@ dev.style.backgroundColor = "orange";
 dev.style.left = "950px";
 dev.style.top = "500px";
 devDescription.style.display = "none";
+
+proc.style.backgroundColor = "orange";
+proc.style.left = "1250px";
+proc.style.top = "500px";
+procDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -240,6 +246,34 @@ devDescription.style.display = "none";
 dev.onclick = function()
 {
 devToggle();
+};
+
+};
+
+};
+
+proc.onclick = function procToggle()
+{
+openDirectory();
+
+proc.style.display = "block";
+proc.style.left = "900px";
+proc.style.top = "400px";
+proc.style.backgroundColor = "red";
+procDescription.style.display = "inline";
+
+proc.onclick = function()
+{
+closeDirectory();
+
+proc.style.backgroundColor = "orange";
+proc.style.left = "1250px";
+proc.style.top = "500px";
+procDescription.style.display = "none";
+
+proc.onclick = function()
+{
+procToggle();
 };
 
 };
