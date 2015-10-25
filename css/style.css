@@ -22,3 +22,5 @@ h2{text-align: center;}
 #mnt{left: 350px; top: 1100px; display: none;}
 #media{left: 650px; top: 1100px; display: none;}
 #srv{left: 950px; top: 1100px; display: none;}
+
+#binDescription{position: relative; left: 875px; top: 600px; color: orange;}

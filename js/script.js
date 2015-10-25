@@ -55,6 +55,11 @@ opt.style.display = "none";
 mnt.style.display = "none";
 media.style.display = "none";
 srv.style.display = "none";
+
+bin.style.backgroundColor = "orange";
+bin.style.left = "50px";
+bin.style.top = "500px";
+document.getElementById("binDescription").style.display = "none";
 };
 
 function openDirectory()
@@ -118,6 +123,13 @@ bin.style.left = "900px";
 bin.style.top = "400px";
 bin.style.backgroundColor = "red";
 
+var binDescriptionHolder = document.createElement("p");
+
+var binDescription = document.createTextNode("User Binaries go in this Directory");
+binDescriptionHolder.appendChild(binDescription);
+document.body.appendChild(binDescriptionHolder);
+binDescriptionHolder.setAttribute("id", "binDescription");
+
 bin.onclick = function()
 {
 closeDirectory();
@@ -125,11 +137,13 @@ closeDirectory();
 bin.style.backgroundColor = "orange";
 bin.style.left = "50px";
 bin.style.top = "500px";
+binDescriptionHolder.style.display = "none";
 
 bin.onclick = function()
 {
 binToggle();
 };
+
 };
 
 };
