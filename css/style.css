@@ -1,12 +1,9 @@
-h1{text-align: center;}
-h2{text-align: center;}
+h1, h2{text-align: center;}
 
 .directory{position: absolute; width: 200px; height: 150px; line-height: 150px; background-color: orange; text-align: center; vertical-align: middle; color: white;}
 .directory:hover{border: 2px solid yellow;}
 
 progress{position: relative; left: 42%;}
-
-.directoryDescription{position: absolute; width: 200px; height: 150px; background-color: yellow; color: black; left: 200px; top: 300px; text-align: center;}
 
 #parent{left: 900px; top: 200px;}
 #bin{left: 50px; top: 500px; display: none;}
@@ -25,20 +22,6 @@ progress{position: relative; left: 42%;}
 #media{left: 650px; top: 1100px; display: none;}
 #srv{left: 950px; top: 1100px; display: none;}
 
-#binDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#sbinDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#etcDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#devDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#procDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#varDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#tmpDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#usrDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#homeDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#bootDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#libDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#optDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#mntDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#mediaDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
-#srvDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
+#binDescription, #sbinDescription, #etcDescription, #devDescription, #procDescription, #varDescription, #tmpDescription, #usrDescription, #homeDescription, #bootDescription, #libDescription, #optDescription, #mntDescription, #mediaDescription, #srvDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
 
 #nextPage{position: absolute; top: 1400px; left: 45%;}
