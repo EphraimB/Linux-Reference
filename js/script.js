@@ -22,6 +22,7 @@ var devDescription = document.getElementById("devDescription");
 var procDescription = document.getElementById("procDescription");
 var varDescription = document.getElementById("varDescription");
 var tmpDescription = document.getElementById("tmpDescription");
+var usrDescription = document.getElementById("usrDescription");
 
 function openParentDirectory()
 {
@@ -98,6 +99,11 @@ tmp.style.backgroundColor = "orange";
 tmp.style.left = "50px";
 tmp.style.top = "800px";
 tmpDescription.style.display = "none";
+
+usr.style.backgroundColor = "orange";
+usr.style.left = "350px";
+usr.style.top = "800px";
+usrDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -342,6 +348,34 @@ tmpDescription.style.display = "none";
 tmp.onclick = function()
 {
 tmpToggle();
+};
+
+};
+
+};
+
+usr.onclick = function usrToggle()
+{
+openDirectory();
+
+usr.style.display = "block";
+usr.style.left = "900px";
+usr.style.top = "400px";
+usr.style.backgroundColor = "red";
+usrDescription.style.display = "inline";
+
+usr.onclick = function()
+{
+closeDirectory();
+
+usr.style.backgroundColor = "orange";
+usr.style.left = "350px";
+usr.style.top = "800px";
+usrDescription.style.display = "none";
+
+usr.onclick = function()
+{
+usrToggle();
 };
 
 };
