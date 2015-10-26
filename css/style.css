@@ -4,6 +4,8 @@ h2{text-align: center;}
 .directory{position: absolute; width: 200px; height: 150px; line-height: 150px; background-color: orange; text-align: center; vertical-align: middle; color: white;}
 .directory:hover{border: 2px solid yellow;}
 
+progress{position: relative; left: 42%;}
+
 .directoryDescription{position: absolute; width: 200px; height: 150px; background-color: yellow; color: black; left: 200px; top: 300px; text-align: center;}
 
 #parent{left: 900px; top: 200px;}
@@ -38,3 +40,5 @@ h2{text-align: center;}
 #mntDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
 #mediaDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
 #srvDescription{position: relative; left: 875px; top: 600px; color: orange; display: none;}
+
+#nextPage{position: absolute; top: 1400px; left: 45%;}

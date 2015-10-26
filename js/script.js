@@ -31,6 +31,8 @@ var mntDescription = document.getElementById("mntDescription");
 var mediaDescription = document.getElementById("mediaDescription");
 var srvDescription = document.getElementById("srvDescription");
 
+var nextPage = document.getElementById("nextPage");
+
 function openParentDirectory()
 {
 parent.style.backgroundColor = "red";
@@ -620,4 +622,9 @@ srvToggle();
 
 };
 
+};
+
+nextPage.onclick = function()
+{
+alert("Page 2 coming soon...");
 };
