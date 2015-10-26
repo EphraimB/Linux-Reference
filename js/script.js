@@ -24,6 +24,7 @@ var varDescription = document.getElementById("varDescription");
 var tmpDescription = document.getElementById("tmpDescription");
 var usrDescription = document.getElementById("usrDescription");
 var homeDescription = document.getElementById("homeDescription");
+var bootDescription = document.getElementById("bootDescription");
 
 function openParentDirectory()
 {
@@ -110,6 +111,11 @@ home.style.backgroundColor = "orange";
 home.style.left = "650px";
 home.style.top = "800px";
 homeDescription.style.display = "none";
+
+boot.style.backgroundColor = "orange";
+boot.style.left = "950px";
+boot.style.top = "800px";
+bootDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -410,6 +416,34 @@ homeDescription.style.display = "none";
 home.onclick = function()
 {
 homeToggle();
+};
+
+};
+
+};
+
+boot.onclick = function bootToggle()
+{
+openDirectory();
+
+boot.style.display = "block";
+boot.style.left = "900px";
+boot.style.top = "400px";
+boot.style.backgroundColor = "red";
+bootDescription.style.display = "inline";
+
+boot.onclick = function()
+{
+closeDirectory();
+
+boot.style.backgroundColor = "orange";
+boot.style.left = "950px";
+boot.style.top = "800px";
+bootDescription.style.display = "none";
+
+boot.onclick = function()
+{
+bootToggle();
 };
 
 };
