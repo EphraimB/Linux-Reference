@@ -27,6 +27,7 @@ var homeDescription = document.getElementById("homeDescription");
 var bootDescription = document.getElementById("bootDescription");
 var libDescription = document.getElementById("libDescription");
 var optDescription = document.getElementById("optDescription");
+var mntDescription = document.getElementById("mntDescription");
 
 function openParentDirectory()
 {
@@ -128,6 +129,11 @@ opt.style.backgroundColor = "orange";
 opt.style.left = "1550px";
 opt.style.top = "800px";
 optDescription.style.display = "none";
+
+mnt.style.backgroundColor = "orange";
+mnt.style.left = "350px";
+mnt.style.top = "1100px";
+mntDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -512,6 +518,34 @@ optDescription.style.display = "none";
 opt.onclick = function()
 {
 optToggle();
+};
+
+};
+
+};
+
+mnt.onclick = function mntToggle()
+{
+openDirectory();
+
+mnt.style.display = "block";
+mnt.style.left = "900px";
+mnt.style.top = "400px";
+mnt.style.backgroundColor = "red";
+mntDescription.style.display = "inline";
+
+mnt.onclick = function()
+{
+closeDirectory();
+
+mnt.style.backgroundColor = "orange";
+mnt.style.left = "350px";
+mnt.style.top = "1100px";
+mntDescription.style.display = "none";
+
+mnt.onclick = function()
+{
+mntToggle();
 };
 
 };
