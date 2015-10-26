@@ -23,6 +23,7 @@ var procDescription = document.getElementById("procDescription");
 var varDescription = document.getElementById("varDescription");
 var tmpDescription = document.getElementById("tmpDescription");
 var usrDescription = document.getElementById("usrDescription");
+var homeDescription = document.getElementById("homeDescription");
 
 function openParentDirectory()
 {
@@ -104,6 +105,11 @@ usr.style.backgroundColor = "orange";
 usr.style.left = "350px";
 usr.style.top = "800px";
 usrDescription.style.display = "none";
+
+home.style.backgroundColor = "orange";
+home.style.left = "650px";
+home.style.top = "800px";
+homeDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -376,6 +382,34 @@ usrDescription.style.display = "none";
 usr.onclick = function()
 {
 usrToggle();
+};
+
+};
+
+};
+
+home.onclick = function homeToggle()
+{
+openDirectory();
+
+home.style.display = "block";
+home.style.left = "900px";
+home.style.top = "400px";
+home.style.backgroundColor = "red";
+homeDescription.style.display = "inline";
+
+home.onclick = function()
+{
+closeDirectory();
+
+home.style.backgroundColor = "orange";
+home.style.left = "650px";
+home.style.top = "800px";
+homeDescription.style.display = "none";
+
+home.onclick = function()
+{
+homeToggle();
 };
 
 };
