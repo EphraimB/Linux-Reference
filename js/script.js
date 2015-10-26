@@ -25,6 +25,7 @@ var tmpDescription = document.getElementById("tmpDescription");
 var usrDescription = document.getElementById("usrDescription");
 var homeDescription = document.getElementById("homeDescription");
 var bootDescription = document.getElementById("bootDescription");
+var libDescription = document.getElementById("libDescription");
 
 function openParentDirectory()
 {
@@ -116,6 +117,11 @@ boot.style.backgroundColor = "orange";
 boot.style.left = "950px";
 boot.style.top = "800px";
 bootDescription.style.display = "none";
+
+lib.style.backgroundColor = "orange";
+lib.style.left = "1250px";
+lib.style.top = "800px";
+libDescription.style.display = "none";
 };
 
 function openDirectory()
@@ -444,6 +450,34 @@ bootDescription.style.display = "none";
 boot.onclick = function()
 {
 bootToggle();
+};
+
+};
+
+};
+
+lib.onclick = function libToggle()
+{
+openDirectory();
+
+lib.style.display = "block";
+lib.style.left = "900px";
+lib.style.top = "400px";
+lib.style.backgroundColor = "red";
+libDescription.style.display = "inline";
+
+lib.onclick = function()
+{
+closeDirectory();
+
+lib.style.backgroundColor = "orange";
+lib.style.left = "1250px";
+lib.style.top = "800px";
+libDescription.style.display = "none";
+
+lib.onclick = function()
+{
+libToggle();
 };
 
 };
